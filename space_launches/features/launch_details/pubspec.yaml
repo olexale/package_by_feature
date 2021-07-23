@@ -1,0 +1,35 @@
+name: launch_details
+description: Space missions launche details package
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  freezed_annotation: ^0.14.1
+  retrofit: ^2.0.0-beta1
+  get_it: ^6.0.0
+  injectable: ^1.2.2
+  auto_route: ^1.0.2
+  launch_status:
+    path: ../launch_status/
+  space_launch_theme:
+    path: ../space_launch_theme/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner:
+  freezed: ^0.14.1+1
+  json_serializable: ^4.1.0
+  retrofit_generator: ^2.0.0-beta2
+  injectable_generator: ^1.2.2
+  auto_route_generator: ^1.0.2
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,35 @@
+name: space_launches
+description: Space missions launches calendar
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  freezed_annotation: ^0.14.1
+  retrofit: ^2.0.0-beta1
+  get_it: ^6.0.0
+  injectable: ^1.2.2
+  auto_route: ^1.0.2
+  launch_details:
+    path: features/launch_details/
+  upcoming_launches:
+    path: features/upcoming_launches/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner:
+  freezed: ^0.14.1+1
+  json_serializable: ^4.1.0
+  retrofit_generator: ^2.0.0-beta2
+  injectable_generator: ^1.2.2
+  auto_route_generator: ^1.0.2
+
+flutter:
+  uses-material-design: true
